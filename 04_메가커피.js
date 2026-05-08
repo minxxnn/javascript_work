@@ -29,24 +29,23 @@ const megaCoffee = {
   orders : [
     {
       menuName : "아메리카노",
-      option : "ICE",
+      option : "ICE", 
       quantity : 2
     },
     {
       menuName : "딸기스무디",
-      option : "ICE",
+      option : "ICE", 
       quantity : 1
     },
     {
       menuName : "카페라떼",
-      option : "HOT",
+      option : "HOT", 
       quantity : 3
     },
   ],
 }
-
 /**
- * 🧩 문제
+🧩 문제
 ✅ 1. 기본 접근
 매장 이름을 출력하시오.
 첫 번째 메뉴 이름을 출력하시오.
@@ -56,8 +55,7 @@ const megaCoffee = {
 첫 번째 주문의 수량을 출력하시오.
 두 번째 주문의 메뉴 이름을 출력하시오.
 세 번째 주문의 옵션을 출력하시오.
- */
-
+*/
 console.log('✅ 1. 기본 접근')
 // 1. 매장 이름을 출력하시오.
 console.log("매장 이름 : " + megaCoffee.name)

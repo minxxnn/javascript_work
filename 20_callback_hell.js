@@ -1,0 +1,27 @@
+// 콜백헬(CallBack 지옥)
+// setTimeout()
+// 1초 후 치킨 주문 -> 1초 후 배달 -> 1초 후 식사
+// 1. 치킨 주문 완료
+// 2. 배달 완료
+// 3. 맛있게 먹기.
+// setTimeout(()=>{
+//   console.log("1. 치킨 주문 완료...")
+// }, 1000)
+// setTimeout(()=>{
+//   console.log("2. 배달 완료...")
+// }, 1000)
+// setTimeout(()=>{
+//   console.log("3. 맛있게 먹기...")
+// }, 1000)
+// -> 3개 다 한번에 출력됨
+
+setTimeout(()=>{
+  console.log("1. 치킨 주문 완료...")
+  setTimeout(()=>{
+    console.log("2. 배달 완료...")
+    setTimeout(()=>{
+      console.log("3. 맛있게 먹기...")
+    }, 1000)
+  }, 1000)
+}, 1000)
+// -> 1초마다 1개씩 출력됨
